@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "ManifestMate",
+    "version": "1.0.1",
+    "default_locale": "en",
+    "description": "Converting kilograms and meters to pounds and feet + inches for a Google search",
+    "permissions": [
+        "activeTab",
+        "scripting"
+      ],
+    "content_scripts": [
+        {
+          "matches": ["https://www.google.com/search*"],
+          "js": ["content.js"]
+        }
+      ]
+}
